@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Main-font: "Manrope", sans-serif;
+  --primary-bg: rgba(7, 7, 8, 1);
+  --secondary-color: rgba(87, 58, 238, 1);
+  --primary-font-color: rgba(196, 196, 196, 1);
+  --secondary-font-color: rgba(255, 255, 255, 1);
+  /* --main-font-color: rgba(121, 124, 134, 1); */
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  /* color: var(--primary-font-color); */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-card {
+  width: 50%;
+  height: auto;
+  background-color: var(--primary-bg);
+  border: 1px solid var(--primary-font-color);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.profile-header img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--secondary-font-color);
+}
+.profile-links {
+  margin: 40px 0;
+}
+.profile-links h2 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: var(--secondary-font-color);
+}
+.profile-socials {
+  margin: 5px 0;
+}
+.profile-socials ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.profile-socials a {
+  text-decoration: none;
+  color: var(--primary-font-color);
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+.profile-socials a:hover {
+  color: var(--secondary-color);
+}
+.profile-bio {
+  color: var(--primary-font-color);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 23px;
+}
+.profile-hobbies h3,
+.profile-dislikes h3 {
+  color: var(--secondary-font-color);
+  margin-bottom: 10px;
+  margin: 20px 0;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+.profile-hobbies ul,
+.profile-dislikes ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  color: var(--primary-font-color);
+}
+.profile-footer {
+  margin-top: 20px;
+  text-align: center;
+  color: var(--primary-font-color);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1440px) {
+  .profile-card {
+    width: 70%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-card {
+    width: 90%;
+    height: auto;
+  }
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .profile-header img {
+    width: 100px;
+    height: 100px;
+  }
+  .profile-links {
+    margin: 0px 0 20px;
+  }
+}
+

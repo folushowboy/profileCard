@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <article data-testid="test-profile-card" class="profile-card">
+      <header class="profile-header">
+        <figure data-testid="test-user-avatar">
+          <img src="./images/tolulope.jpg" alt="Avatar" />
+        </figure>
+        <div class="profile-links">
+          <h2 data-testid="test-user-name" aria-label="UserName">
+            Odusina Tolulope
+          </h2>
+          <nav class="profile-socials" data-testid="test-user-social-links">
+            <ul>
+              <li >
+                <a
+                  href="https://github.com/folushowboy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-GitHub"
+                  >GitHub</a
+                >
+              </li>
+              <li>
+                <a
+                  href=" https://www.linkedin.com/in/odusina-tolulope"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-LinkedIn"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://portfolio-certification.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-Portfolio"
+                  >Portfolio</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <p data-testid="test-user-bio" class="profile-bio">
+        I am a passionate Frontend Developer who enjoys transforming creative
+        ideas into functional, responsive, and visually appealing web
+        experiences. With a strong foundation in HTML, CSS, and JavaScript, I
+        focus on writing clean, accessible, and efficient code that enhances
+        user interaction and performance. I love bringing designs to life while
+        maintaining a balance between aesthetics and usability. My goal is to
+        build interfaces that not only look good but also work seamlessly across
+        different devices and screen sizes.
+      </p>
+
+      <section class="profile-hobbies">
+        <h3>Hobbies</h3>
+        <ul>
+          <li data-testid="test-user-hobbies">Coding</li>
+          <li data-testid="test-user-hobbies">Reading</li>
+          <li data-testid="test-user-hobbies">Design</li>
+        </ul>
+      </section>
+
+      <section class="profile-dislikes">
+        <h3>Dislikes</h3>
+        <ul>
+          <li data-testid="test-user-dislikes">Procrastination</li>
+          <li data-testid="test-user-dislikes">Bugs in code</li>
+        </ul>
+      </section>
+
+      <footer class="profile-footer">
+        <p>Current Time: <span id="time" data-testid="test-user-time"></span> ms</p>
+      </footer>
+    </article>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
