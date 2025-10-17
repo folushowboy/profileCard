@@ -1,4 +1,6 @@
-* {
+
+ 
+  * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,9 +15,8 @@
   /* --main-font-color: rgba(121, 124, 134, 1); */
 }
 body {
-  width: 100vw;
-  height: 100vh;
-  /* color: var(--primary-font-color); */
+  height: 100dvh;
+  background-color: var(--primary-bg);
   margin: 0;
   padding: 0;
   display: flex;
@@ -23,15 +24,21 @@ body {
   align-items: center;
 }
 .profile-card {
-  width: 50%;
+  width: 60%;
   height: auto;
   background-color: var(--primary-bg);
   border: 1px solid var(--primary-font-color);
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
+  
+  /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); */
+  /* background: linear-gradient(
+    135deg,
+    rgba(7, 7, 8, 1) 0%,
+    rgba(20, 20, 21, 1) 100%
+  ); */
+  position: relative;
+  margin: 0;
   padding: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -107,29 +114,109 @@ body {
   font-size: 0.9rem;
 }
 
-@media (max-width: 1440px) {
+
+@media (max-width: 900px) {
   .profile-card {
-    width: 70%;
-    height: auto;
+    max-width: 70%;
+    padding: 18px;
+  }
+
+  .profile-header {
+    gap: 16px;
+  }
+
+  .profile-header img {
+    width: 72px;
+    height: 72px;
+  }
+
+  .profile-links {
+    margin: 24px 0;
+  }
+
+  .profile-links h2 {
+    font-size: 1.25rem;
+  }
+
+  .profile-socials ul {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .profile-bio {
+    font-size: 0.95rem;
+    line-height: 22px;
+  }
+
+  .profile-hobbies ul,
+  .profile-dislikes ul {
+    gap: 12px;
   }
 }
 
-@media (max-width: 768px) {
-  .profile-card {
-    width: 90%;
-    height: auto;
-    height: 100%;
+@media (max-width: 600px) {
+  body {
+    padding: 24px 12px;
   }
+
+  .profile-card {
+    max-width: 100%;
+    width: 100%;
+    padding: 16px;
+    border-radius: 12px;
+  }
+
   .profile-header {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 12px;
   }
+
   .profile-header img {
-    width: 100px;
-    height: 100px;
+    width: 64px;
+    height: 64px;
   }
+
   .profile-links {
-    margin: 0px 0 20px;
+    margin: 12px 0;
+  }
+
+  .profile-links h2 {
+    font-size: 1.125rem;
+  }
+
+  .profile-socials ul {
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .profile-bio {
+    font-size: 0.95rem;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .profile-hobbies h3,
+  .profile-dislikes h3 {
+    font-size: 1.125rem;
+    text-align: center;
+  }
+
+  .profile-hobbies ul,
+  .profile-dislikes ul {
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .profile-footer {
+    font-size: 0.85rem;
+  }
+
+  .profile-card:hover {
+    transform: none;
   }
 }
+
+
