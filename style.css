@@ -118,6 +118,7 @@ body {
   .profile-card {
     width: 90%;
     height: auto;
+    height: 100%;
   }
   .profile-header {
     flex-direction: column;
@@ -132,4 +133,3 @@ body {
     margin: 0px 0 20px;
   }
 }
-
