@@ -1,6 +1,4 @@
-
- 
-  * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -26,17 +24,13 @@ body {
 .profile-card {
   width: 60%;
   height: auto;
-  background-color: var(--primary-bg);
-  border: 1px solid var(--primary-font-color);
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  
-  /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); */
-  /* background: linear-gradient(
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  background: linear-gradient(
     135deg,
     rgba(7, 7, 8, 1) 0%,
     rgba(20, 20, 21, 1) 100%
-  ); */
+  );
   position: relative;
   margin: 0;
   padding: 20px;
@@ -113,7 +107,6 @@ body {
   color: var(--primary-font-color);
   font-size: 0.9rem;
 }
-
 
 @media (max-width: 900px) {
   .profile-card {
@@ -218,5 +211,3 @@ body {
     transform: none;
   }
 }
-
-
