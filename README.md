@@ -1,4 +1,4 @@
-# Frontend Wizards — Stage 0: Testable Profile Card
+# Stage 0: Testable Profile Card
 
 This project is a small, accessible, and responsive **Profile Card** built with **HTML**, **CSS**, and **JavaScript**.  
 It follows semantic HTML standards and includes `data-testid` attributes for automated testing.
