@@ -61,6 +61,7 @@ label{
 .input-field input:is(:focus, :valid),
 .input-field textarea:is(:focus, :valid){
     border-bottom: 2px solid var(--secondary-color);
+     outline-offset: 3px;
 }
 input,
 textarea{
