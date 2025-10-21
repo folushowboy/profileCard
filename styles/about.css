@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Fjalla+One&family=Lexend+Deca:wght@100..900&family=Manrope:wght@200..800&family=Nosifer&family=Oleo+Script:wght@400;700&family=VT323&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Main-font: "poppins", sans-serif;
+  --primary-font: "poppins", sans-serif;
+  --primary-bg: rgba(7, 7, 8, 1);
+  --secondary-color: rgba(87, 58, 238, 1);
+  --primary-font-color: rgba(196, 196, 196, 1);
+  --secondary-font-color: rgba(255, 255, 255, 1);
+}
+body {
+  /* height: 100dvh; */
+  background-color: var(--primary-bg);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  width: 70%;
+  /* height: auto; */
+  background: linear-gradient(
+    135deg,
+    rgba(7, 7, 8, 1) 0%,
+    rgba(20, 20, 21, 1) 100%
+  ); 
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0;
+  position: relative;
+  justify-content: center;
+  /* background: #fff; */
+}
+.images img {
+  width: 100%;
+  border-radius: 50%;
+}
+main h1 {
+  font-family: var(--Main-font);
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: var(--secondary-font-color);
+}
+main h2 {
+  font-family: var(--Main-font);
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: var(--secondary-font-color);
+}
+main p {
+  font-family: var(--primary-font);
+  font-size: 1.2rem;
+  color: var(--primary-font-color);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.my-bio,
+.goals,
+.confidence,
+.future,
+.extra-thoughts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 80px 0;
+}
+.text{
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+  main {
+    width: 90%;
+    padding: 10px;
+  }
+  .my-bio,
+  .goals,
+  .confidence,
+  .future,
+  .extra-thoughts {
+    flex-direction: column;
+  }
+  .images {
+    margin-bottom: 20px;
+  }
+}
