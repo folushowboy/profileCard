@@ -96,11 +96,11 @@ textarea{
 /* input.error, textarea.error {
   border-bottom: 2px solid #ff6b6b !important;
 } */
-.buttons{
-    /* display: flex;
+/* .buttons{
+    display: flex;
     justify-content: space-around;
-    align-items: center; */
-}
+    align-items: center;
+} */
 .btn{
   padding: 10px 25px;
   border-radius: 8px;
@@ -126,7 +126,7 @@ textarea{
     width: 95%;
   }
   .buttons{
-    display: block;
+    /* display: block; */
     text-align: center;
 }
 }

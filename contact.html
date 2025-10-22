@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,7 +28,7 @@
                 <label for="email">Email Address</label>
                 <input type="email" id="email" name="email" data-testid="test-contact-email"
                     aria-describedby="error-email" required />
-                <span>
+                <span id="erroremailtext">
                     <!-- <i class="bx bx-error-circle error-icon"></i> -->
                     <p id="error-email" data-testid="test-contact-error-email" class="error-msg"></p>
                 </span>
@@ -42,7 +44,7 @@
                 <label for="message">Message</label>
                 <textarea id="message" name="message" data-testid="test-contact-message"
                     aria-describedby="error-message" minlength="10" required></textarea>
-                <span>
+                <span id="errormsgtext">
                     <!-- <i class="bx bx-error-circle error-icon"></i> -->
                     <p id="error-message" data-testid="test-contact-error-message" class="error-msg"></p>
                 </span>
@@ -51,9 +53,9 @@
                 <button type="submit" class="btn" id="submit" data-testid="test-contact-submit">
                     Send Message
                 </button>
-                <button type="submit" class="btn" id="clear" onclick="clearMsg()" data-testid="test-contact-clear">
+                <!-- <button type="submit" class="btn" id="clear" onclick="clearMsg()" data-testid="test-contact-clear">
                     Clear Message
-                </button>
+                </button> -->
             </div>
 
 
